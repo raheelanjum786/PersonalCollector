@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import MarqueeBanner from '../components/MarqueeBanner'
+import MarqueeBanner from '../Components/MarqueeBanner'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })

@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import CollectionCard from '../components/CollectionCard'
-import SectionHeader from '../components/SectionHeader'
-import MarqueeBanner from '../components/MarqueeBanner'
-import { items } from '../data/items'
+import CollectionCard from '../Components/CollectionCard'
+import SectionHeader from '../Components/SectionHeader'
+import MarqueeBanner from '../Components/MarqueeBanner'
+import { Items } from "../data/Items"
 
 const CONDITIONS = ['All', 'Excellent', 'Very Good', 'Good', 'Fair', 'Worn']
 const ERAS = ['All', '1920s', '1930s', '1940s', '1950s', '1960s', '1970s']
@@ -12,7 +12,7 @@ export default function Collection() {
   const [eraFilter, setEraFilter] = useState('All')
   const [search, setSearch] = useState('')
 
-  const filtered = items.filter(item => {
+  const filtered = Items.filter(item => {
     const matchCond = condFilter === 'All' || item.condition === condFilter
     const matchEra = eraFilter === 'All' || item.era.includes(eraFilter.replace('s', ''))
     const matchSearch = search === '' ||

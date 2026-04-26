@@ -1,4 +1,4 @@
-export const items = [
+const items = [
   {
     id: '01',
     name: 'Borden Elsie Brand Homogenized Milk',
@@ -104,6 +104,9 @@ export const items = [
     emoji: '🏚️',
   },
 ]
+
+export default items
+export const Items = items
 
 export const stats = [
   { value: '347+', label: 'Caps Catalogued' },

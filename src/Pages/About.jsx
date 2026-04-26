@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import MarqueeBanner from '../components/MarqueeBanner'
+import MarqueeBanner from '../Components/MarqueeBanner'
 
 export default function About() {
   const timeline = [

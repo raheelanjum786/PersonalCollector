@@ -1,4 +1,4 @@
-import { stats } from '../data/items'
+import { stats } from '../data/Items'
 
 export default function StatsRow() {
   return (

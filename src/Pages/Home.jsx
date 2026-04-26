@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import MarqueeBanner from '../components/MarqueeBanner'
-import StatsRow from '../components/StatsRow'
-import CollectionCard from '../components/CollectionCard'
-import SectionHeader from '../components/SectionHeader'
-import { items } from '../data/items'
+import MarqueeBanner from '../Components/MarqueeBanner'
+import StatsRow from '../Components/StatsRow'
+import CollectionCard from '../Components/CollectionCard'
+import SectionHeader from '../Components/SectionHeader'
+import items from '../data/Items'
 
 export default function Home() {
   const featured = items.slice(0, 4)
